@@ -2,8 +2,13 @@ package org.foo;
 
 import org.jenkinsci.plugins.docker.workflow.Docker
 import groovy.transform.Field
+import org.jenkinsci.plugins.workflow.cps.CpsScript
 
-@Field Docker docker = new Docker(null)
+@Field Docker docker
+
+Zot(CpsScript script) {
+  this.docker = script.getProperty("docker")
+}
 
 def echo(msg) {
   echo "-> ${msg}"
