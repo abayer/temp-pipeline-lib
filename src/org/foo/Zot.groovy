@@ -6,7 +6,7 @@ import org.jenkinsci.plugins.workflow.cps.CpsScript
 
 @Field Docker docker
 
-Zot(CpsScript script) {
+Zot(script) {
   this.docker = script.getProperty("docker")
 }
 
