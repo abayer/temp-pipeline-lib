@@ -1,4 +1,4 @@
-package org.foo.MyObject
+package org.foo
 
 public class MyObject implements Serializable {
 
