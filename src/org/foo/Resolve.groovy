@@ -5,6 +5,6 @@ package org.foo
 
 public class Resolve implements Serializable {
   public String aThing() {
-    return this.class.classLoader.loadClass('org.jenkinsci.plugins.Housekeeper').name
+    return this.class.classLoader.loadClass('org.jenkinsci.plugins.housekeeper.Housekeeper').name
   }
 }
