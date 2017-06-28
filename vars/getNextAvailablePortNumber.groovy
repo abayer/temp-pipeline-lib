@@ -1,3 +1,5 @@
+import java.util.regex.Pattern
+
 def call() {
 def portsInUseOnServer = {
 def cmd = """Invoke-Command `
