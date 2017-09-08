@@ -14,7 +14,7 @@ public class Bar implements Serializable {
     this.folderFullPath = sSubSetPath.substring(sSubSetPath.indexOf("/") + 1);
   }
   
-  def setShortName(int i) {
+  def doThing() {
     shortName = String.valueOf(53)
   }
 }
