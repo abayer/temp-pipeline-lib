@@ -15,6 +15,6 @@ public class Bar implements Serializable {
   }
   
   def setShortName(int i) {
-    shortName = String.valueOf(i)
+    shortName = String.valueOf(53)
   }
 }
