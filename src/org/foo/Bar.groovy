@@ -13,4 +13,7 @@ public class Bar implements Serializable {
     String sSubSetPath = remotePathParam.replace("jenkins://", "")
     this.folderFullPath = sSubSetPath.substring(sSubSetPath.indexOf("/") + 1);
   }
+  
+  def setShortName(int i) {
+    jobUrl = String.valueOf(i)
 }
