@@ -16,4 +16,5 @@ public class Bar implements Serializable {
   
   def setShortName(int i) {
     jobUrl = String.valueOf(i)
+  }
 }
