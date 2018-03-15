@@ -1,5 +1,5 @@
 import common.EnvsToBuild
 
-@org.jenkinsci.plugins.workflow.libs.Library('jenkins-groovy-error-reproduction-library')
+@org.jenkinsci.plugins.workflow.libs.Library('argh@envthing')
 EnvsToBuild envsToBuild = new EnvsToBuild(true, false)
 println envsToBuild
