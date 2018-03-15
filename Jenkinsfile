@@ -1,4 +1,6 @@
 node {
   checkout scm
-  load "src/pipeline.groovy"
+  def example = load "src/pipeline.groovy"
+  example.EnvsToBuild()
+  
 }
