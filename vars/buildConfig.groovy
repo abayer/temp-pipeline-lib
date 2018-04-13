@@ -2,7 +2,7 @@ class buildConfig {
     def otherProps = []
     def paramList = []
     
-    def addBuildConfiguration(buildConfiguration) {
+    def addBuildConfigurations(buildConfiguration) {
         otherProps.addAll(buildConfiguration)
     }
     
@@ -18,10 +18,10 @@ class buildConfig {
         paramList.addAll(buildParameters)
     }
     
-    def setBuildConfig() {
+    def getJobProperties() {
         def propList = []
         propList.addAll(otherProps)
         propList.add([$class: 'ParametersDefinitionProperty', parameterDefinitions: paramList])
-        properties(propList)
+        return propList
     }
 }
