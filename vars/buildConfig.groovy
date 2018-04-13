@@ -1,4 +1,2 @@
-class buildConfig { 
-    def configList = []
-    def paramList = []
-}
+def configList = []
+def paramList = []
