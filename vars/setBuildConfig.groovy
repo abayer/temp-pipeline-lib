@@ -1,4 +1,4 @@
-def call() {
+def call(BuildConfig buildConfig) {
     def fullParamList = [
         string(defaultValue: 'stable', description: 'Tag for ansible-executor image', name: 'ANSIBLE_EXECUTOR_TAG'),
         string(defaultValue: 'stable', description: 'Tag for linchpin-executor image', name: 'LINCHPIN_EXECUTOR_TAG'),

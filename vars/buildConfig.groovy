@@ -1,2 +1,0 @@
-def configList = []
-def paramList = []
