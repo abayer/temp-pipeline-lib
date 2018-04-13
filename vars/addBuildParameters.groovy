@@ -1,3 +1,3 @@
 def call(buildParameters) {
-    buildConfig.addBuildParameters(buildParameters)
+    buildConfig.paramList.addAll(buildParameters)
 }

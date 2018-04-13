@@ -1,3 +1,3 @@
 def call(buildConfiguration) {
-    buildConfig.addBuildConfigurations(buildConfiguration)
+    buildConfig.configList.addAll(buildConfiguration)
 }
