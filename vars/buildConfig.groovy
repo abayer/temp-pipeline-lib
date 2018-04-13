@@ -7,14 +7,14 @@ class buildConfig {
     }
     
     def addBuildParameters(buildParameters) {
-        paramList.addAll(steps.defaultParams())
+        //        paramList.addAll(steps.defaultParams())
         paramList.addAll(buildParameters)
     }
     
     def setBuildConfig() {
         def propList = []
         propList.addAll(otherProps)
-        propList.add(steps.parameters(paramList))
+        propList.add(parameters(paramList))
         properties(propList)
     }
 }
