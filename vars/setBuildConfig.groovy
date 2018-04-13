@@ -11,7 +11,7 @@ def call(BuildConfig buildConfig) {
 
     propList.addAll(buildConfig.configList)
 
-    fullParamList.addAll(buildConfig.paramList)
+    fullParamList.addAll(buildConfig.paramsList)
 
     propList.add(parameters(fullParamList))
     
