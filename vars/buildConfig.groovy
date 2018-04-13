@@ -1,18 +1,18 @@
-def otherProps = []
-def paramList = []
+otherProps = []
+paramList = []
 
 def addBuildConfiguration(buildConfiguration) {
-    this.otherProps.addAll(buildConfiguration)
+    otherProps.addAll(buildConfiguration)
 }
 
 def addBuildParameters(buildParameters) {
-    this.paramList.addAll(defaultParams())
-    this.paramList.addAll(buildParameters)
+    paramList.addAll(defaultParams())
+    paramList.addAll(buildParameters)
 }
 
 def setBuildConfig() {
     def propList = []
-    propList.addAll(this.otherProps)
-    propList.add(parameters(this.paramList))
+    propList.addAll(otherProps)
+    propList.add(parameters(paramList))
     properties(propList)
 }
