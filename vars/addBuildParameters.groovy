@@ -1,5 +1,5 @@
 def call(BuildConfig buildConfig, buildParameters) {
-    buildConfig.paramList.addAll(buildParameters)
+    buildConfig.paramsList.addAll(buildParameters)
     echo "params: configlist: ${buildConfig.configList}"
-    echo "params: paramslist: ${buildConfig.paramList}"
+    echo "params: paramslist: ${buildConfig.paramsList}"
 }
