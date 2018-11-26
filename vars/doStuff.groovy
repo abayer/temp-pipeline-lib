@@ -18,6 +18,5 @@ def call(body) {
         }
     }
 
-    checkpoint "Before parallel"
     parallel outerP
 }
